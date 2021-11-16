@@ -1,0 +1,161 @@
+PROGRAM 1
+$ cat ayesha.sh
+#!/bin/sh
+#timetable-print out amultiplication table
+for i in 1 2 3
+do
+        for j in 1 2 3
+        do value='ayesha'
+                echo-n"$value"
+        done
+        echo
+done
+
+
+Asus@Ayeshu MINGW64 ~ (master)
+$ ./ayesha.sh
+ayeshaayeshaayesha
+ayeshaayeshaayesha
+ayeshaayeshaayesha
+PROGRAM 2
+$ vi appusri.sh
+
+Asus@Ayeshu MINGW64 ~ (master)
+$ cat appusri.sh
+#!/bin/sh
+#file-poke-tell us stuff about files
+files= 'ls'
+for i in $files
+do
+   echo-n"$i"
+   grep $i $i
+done
+
+
+Asus@Ayeshu MINGW64 ~ (master)
+$ ./appusri.sh
+'3D Objects'         Documents               Music                                                                                          NetHood        SendTo        ayesha.sh         rt.sh
+ Aparna5a9           Downloads              'My Documents'                                                                                  OneDrive      'Start Menu'   harshi.sh         tasleem.sh
+ AppData             Favorites               NTUSER.DAT                                                                                     PrintHood      Templates     kowsar.sh
+'Application Data'   IntelGraphicsProfiles   NTUSER.DAT{b8e36e7d-3df0-11ec-910f-dafe085f7912}.TM.blf                                        Recent         Videos        ntuser.dat.LOG1
+ Contacts            Links                   NTUSER.DAT{b8e36e7d-3df0-11ec-910f-dafe085f7912}.TMContainer00000000000000000001.regtrans-ms  'Saved Games'   appusri       ntuser.dat.LOG2
+ Cookies            'Local Settings'         NTUSER.DAT{b8e36e7d-3df0-11ec-910f-dafe085f7912}.TMContainer00000000000000000002.regtrans-ms   Searches       appusri.sh    ntuser.ini
+
+
+
+PROGRAM--3
+#!/bin/sh
+#file-poke-tell us stuff about files
+for i in *;do
+    echo-n "$i"
+    grep $i $i
+done
+
+
+Asus@Ayeshu MINGW64 ~ (master)
+$ ./harshi.sh
+./harshi.sh: line 4: echo-n: command not found
+grep: Objects: No such file or directory
+grep: 3D: No such file or directory
+grep: Objects: No such file or directory
+./harshi.sh: line 4: echo-n: command not found
+grep: Aparna5a9: Is a directory
+./harshi.sh: line 4: echo-n: command not found
+grep: AppData: Is a directory
+./harshi.sh: line 4: echo-n: command not found
+grep: Data: No such file or directory
+grep: Application: No such file or directory
+grep: Data: No such file or directory
+./harshi.sh: line 4: echo-n: command not found
+grep: Contacts: Is a directory
+./harshi.sh: line 4: echo-n: command not found
+grep: Cookies: Is a directory
+./harshi.sh: line 4: echo-n: command not found
+grep: Documents: Is a directory
+./harshi.sh: line 4: echo-n: command not found
+grep: Downloads: Is a directory
+./harshi.sh: line 4: echo-n: command not found
+grep: Favorites: Is a directory
+./harshi.sh: line 4: echo-n: command not found
+grep: IntelGraphicsProfiles: Is a directory
+./harshi.sh: line 4: echo-n: command not found
+grep: Links: Is a directory
+./harshi.sh: line 4: echo-n: command not found
+grep: Settings: No such file or directory
+grep: Local: No such file or directory
+grep: Settings: No such file or directory
+./harshi.sh: line 4: echo-n: command not found
+grep: Music: Is a directory
+./harshi.sh: line 4: echo-n: command not found
+grep: Documents: Is a directory
+grep: My: No such file or directory
+grep: Documents: Is a directory
+./harshi.sh: line 4: echo-n: command not found
+grep: NTUSER.DAT: Device or resource busy
+./harshi.sh: line 4: echo-n: command not found
+./harshi.sh: line 4: echo-n: command not found
+./harshi.sh: line 4: echo-n: command not found
+./harshi.sh: line 4: echo-n: command not found
+grep: NetHood: Is a directory
+./harshi.sh: line 4: echo-n: command not found
+grep: OneDrive: Is a directory
+./harshi.sh: line 4: echo-n: command not found
+grep: PrintHood: Is a directory
+./harshi.sh: line 4: echo-n: command not found
+grep: Recent: Is a directory
+./harshi.sh: line 4: echo-n: command not found
+grep: Games: No such file or directory
+grep: Saved: No such file or directory
+grep: Games: No such file or directory
+./harshi.sh: line 4: echo-n: command not found
+grep: Searches: Is a directory
+./harshi.sh: line 4: echo-n: command not found
+grep: SendTo: Is a directory
+./harshi.sh: line 4: echo-n: command not found
+grep: Menu: No such file or directory
+grep: Start: No such file or directory
+grep: Menu: No such file or directory
+./harshi.sh: line 4: echo-n: command not found
+grep: Templates: Is a directory
+./harshi.sh: line 4: echo-n: command not found
+grep: Videos: Is a directory
+./harshi.sh: line 4: echo-n: command not found
+grep: appusri: Is a directory
+./harshi.sh: line 4: echo-n: command not found
+./harshi.sh: line 4: echo-n: command not found
+./harshi.sh: line 4: echo-n: command not found
+./harshi.sh: line 4: echo-n: command not found
+./harshi.sh: line 4: echo-n: command not found
+grep: ntuser.dat.LOG1: Device or resource busy
+./harshi.sh: line 4: echo-n: command not found
+grep: ntuser.dat.LOG2: Device or resource busy
+./harshi.sh: line 4: echo-n: command not found
+./harshi.sh: line 4: echo-n: command not found
+PROGRAM 4
+#!/bin/sh
+if grep unix myfile
+then
+ :
+else
+   echo "sorry,unix was not found"
+fi
+
+Asus@Ayeshu MINGW64 ~ (master)
+$ ./rt.sh
+grep: myfile: No such file or directory
+sorry,unix was not found
+PROGRAM :5
+#!/bin/sh
+if grep "UNIX" myfile >/dev/null
+then
+  echo UNIX occurs in myfile
+else
+  echo No!
+  echo UNIX does not occur in myfile
+fi
+
+Asus@Ayeshu MINGW64 ~ (master)
+$ ./usha.sh
+grep: myfile: No such file or directory
+No!
+UNIX does not occur in myfile

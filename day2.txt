@@ -1,0 +1,132 @@
+  PROGRAM:6
+#!/bin/sh
+if grep "UNIX" myfile >/dev/null
+then
+    echo "UNIX occurs in file"
+elif grep "DOS" myfile >/dev/null
+then
+    echo "Unix does not occur,but DOS does"
+else
+    echo "Nobody is there"
+fi
+
+
+Asus@Ayeshu MINGW64 ~ (master)
+$ ./sukku.sh
+grep: myfile: No such file or directory
+grep: myfile: No such file or directory
+Nobody is there
+     program 7
+$ cat kc.sh
+#!/bin/sh
+count=0
+for i in *;do
+   if test -x $i;then
+        count='expr $count + 1'
+    fi
+   done
+   echo Total of $count files executable.
+
+
+Asus@Ayeshu MINGW64 ~ (master)
+$ ./kc.sh
+./kc.sh: line 4: test: 3D: binary operator expected
+./kc.sh: line 4: test: Application: binary operator expected
+./kc.sh: line 4: test: Local: binary operator expected
+./kc.sh: line 4: test: My: binary operator expected
+./kc.sh: line 4: test: Saved: binary operator expected
+./kc.sh: line 4: test: Start: binary operator expected
+Total of expr $count + 1 files executable.
+   PROGRAM 8
+$ cat vyshu.sh
+#!/bin/sh
+count=0
+for i in *;do
+   if test-x $i;then
+      count='expr $count + 1'
+   fi
+  done
+  echo Total of $count files executable.
+
+
+Asus@Ayeshu MINGW64 ~ (master)
+$ ./vyshu.sh
+./vyshu.sh: line 4: test-x: command not found
+./vyshu.sh: line 4: test-x: command not found
+./vyshu.sh: line 4: test-x: command not found
+./vyshu.sh: line 4: test-x: command not found
+./vyshu.sh: line 4: test-x: command not found
+./vyshu.sh: line 4: test-x: command not found
+./vyshu.sh: line 4: test-x: command not found
+./vyshu.sh: line 4: test-x: command not found
+./vyshu.sh: line 4: test-x: command not found
+./vyshu.sh: line 4: test-x: command not found
+./vyshu.sh: line 4: test-x: command not found
+./vyshu.sh: line 4: test-x: command not found
+./vyshu.sh: line 4: test-x: command not found
+./vyshu.sh: line 4: test-x: command not found
+./vyshu.sh: line 4: test-x: command not found
+./vyshu.sh: line 4: test-x: command not found
+./vyshu.sh: line 4: test-x: command not found
+./vyshu.sh: line 4: test-x: command not found
+./vyshu.sh: line 4: test-x: command not found
+./vyshu.sh: line 4: test-x: command not found
+./vyshu.sh: line 4: test-x: command not found
+./vyshu.sh: line 4: test-x: command not found
+./vyshu.sh: line 4: test-x: command not found
+./vyshu.sh: line 4: test-x: command not found
+./vyshu.sh: line 4: test-x: command not found
+./vyshu.sh: line 4: test-x: command not found
+./vyshu.sh: line 4: test-x: command not found
+./vyshu.sh: line 4: test-x: command not found
+./vyshu.sh: line 4: test-x: command not found
+./vyshu.sh: line 4: test-x: command not found
+./vyshu.sh: line 4: test-x: command not found
+./vyshu.sh: line 4: test-x: command not found
+./vyshu.sh: line 4: test-x: command not found
+./vyshu.sh: line 4: test-x: command not found
+./vyshu.sh: line 4: test-x: command not found
+./vyshu.sh: line 4: test-x: command not found
+./vyshu.sh: line 4: test-x: command not found
+./vyshu.sh: line 4: test-x: command not found
+./vyshu.sh: line 4: test-x: command not found
+./vyshu.sh: line 4: test-x: command not found
+./vyshu.sh: line 4: test-x: command not found
+./vyshu.sh: line 4: test-x: command not found
+./vyshu.sh: line 4: test-x: command not found
+Total of 0 files executable
+PROGRAM 9
+#!/bin/sh
+i=1
+sum=0
+while [ $i -le 100 ]; do
+  sum='expr $sum + $i'
+  i='expr $i+ 1'
+done
+echo The sum is $sum.
+
+Asus@Ayeshu MINGW64 ~ (master)
+$ ./stk.sh
+./stk.sh: line 4: [: too many arguments
+The sum is expr $sum + $i.
+PROGRAM 10
+#!/bin/sh
+% read X Y Z
+Here are some words as input
+% echo $X
+Here
+% echo $Y
+are
+% echo $Z
+some words as input
+
+Asus@Ayeshu MINGW64 ~ (master)
+$ ./vijay.sh
+./vijay.sh: line 2: fg: no job control
+./vijay.sh: line 3: Here: command not found
+./vijay.sh: line 4: fg: no job control
+./vijay.sh: line 5: Here: command not found
+./vijay.sh: line 6: fg: no job control
+./vijay.sh: line 7: are: command not found
+./vijay.sh: line 8: fg: no job control
+./vijay.sh: line 9: some: command not found
